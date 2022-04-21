@@ -52,3 +52,13 @@ const contactsList = [
 ]
 
 // Your code goes here
+'use strict';
+let txt = "";
+for(let i = 0; i < contactsList.length; i++) {
+  for(i in contactsList) {
+    txt += contactsList[i] + " ";
+  }
+}
+document.getElementById('display_all_contacts').innerHTML = txt;
+
+
